@@ -2,18 +2,18 @@
 
 namespace App\Models;
 
-class Comment
+class Post
 {
     public string $id;
     public string $authorId;
-    public string $postId;
+    public string $title;
     public string $text;
 
-    public function __construct($id, $authorId, $postId, $text)
+    public function __construct($id, $authorId, $title, $text)
     {
         $this->id = $id;
         $this->authorId = $authorId;
-        $this->postId = $postId;
+        $this->title = $title;
         $this->text = $text;
     }
 }
